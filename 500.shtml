@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Simpshots - Error 500</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <link rel="stylesheet" href="http://www.simpshots.com/css/a.css">
+        <link rel="icon" type="image/png" href="http://www.simpshots.com/favicon.png">
+        <link rel="apple-touch-icon" href="http://www.simpshots.com/apple-touch-icon.png">
+    </head>
+    <body class="error-body">
+        <div class="error-frame">
+            <h1>Error 500: Server error!</h1>
+            <p>D'oh! The server failed. LOL</p>
+            <a href="http://www.simpshots.com/">Click here to go back to the main page</a>
+        </div>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-73731795-1','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    </body>
+</html>
