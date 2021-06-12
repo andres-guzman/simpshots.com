@@ -80,26 +80,22 @@ $img = getRandomFromArray($imgList);
             document.addEventListener("click", function (evt) {
                 if(evt.target.id === "button") {
                     
-                    document.getElementById("shots").classList.add("fade--out");
-                    document.getElementById("shots").classList.remove("show");
+                document.getElementById("shots").classList.add("fade--out");
+                document.getElementById("shots").classList.remove("show");
 
-                    setTimeout(function () {
+                    requestAnimationFrame(function () {
+                        var xhr = new XMLHttpRequest ();
+                        xhr.onload = function () {
+                            if (xhr.status >= 200 && xhr.status < 300) {
+                                document.getElementById("shots-box").innerHTML = xhr.responseText;
+                            } else {
+                                console.log('Error');
+                            }
+                        };
 
-                        requestAnimationFrame(function () {
-                            var xhr = new XMLHttpRequest ();
-                            xhr.onload = function () {
-                                if (xhr.status >= 200 && xhr.status < 300) {
-                                    document.getElementById("shots-box").innerHTML = xhr.responseText;
-                                } else {
-                                    console.log('Error');
-                                }
-                            };
-
-                            xhr.open('GET', 'loader.php');
-                            xhr.send();
-                        });
-
-                    }, 140)
+                        xhr.open('GET', 'loader.php');
+                        xhr.send();
+                    });
                 }
             });
         </script>
