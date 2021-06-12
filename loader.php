@@ -15,16 +15,11 @@ function getImagesFromDir($path) {
     return $images;
 }
 function getRandomFromArray($ar) {
-    mt_srand( (double)microtime() * 10 ); //100000
+    mt_srand( (double)microtime() * 1000000 ); //100000
     $num = array_rand($ar);
     return $ar[$num];
 }
 $imgList = getImagesFromDir($root . $path);
 $img = getRandomFromArray($imgList);
 ?>
-
-			<div id="shots-box">
-				<img id="shots" src="<?php echo $path . $img ?>" />
-			</div>
-
-			<a id="click" href="#next">Next</a>   
+<img id="shots" class="show" alt="Random Simpsons screenshot" src="<?php echo $path . $img ?>">
