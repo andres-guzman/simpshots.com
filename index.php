@@ -14,6 +14,7 @@ function getImagesFromDir($path) {
     }
     return $images;
 }
+
 function getRandomFromArray($ar) {
     mt_srand( (double)microtime() * 1000000 ); //100000
     $num = array_rand($ar);
