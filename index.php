@@ -55,7 +55,7 @@ $img = getRandomFromArray($imgList);
             <div id="main--frame">
                 <section id="welcome--panel">
                     <h1>Welcome to Simpshots</h1>
-                    <p>This mini website contains over 5.000 funny screenshots from The Simpsons from season 1 to season 20, <span class="is-visible">hand-picked by this guy:</span><span class="is-hidden">tap the 'Next' button to load more:</span> <span class="is-visible"><a href="https://twitter.com/methplace">Twitter</a> \ <a href="https://github.com/andres-guzman">Github</a> \ <a href="https://www.behance.net/andresguzmancanedo">Behance</a> <br> Click the "Next" button to load more:</span></p>
+                    <p>This mini website contains over 5.000 funny screenshots from The Simpsons from season 1 to season 20, <span class="is-visible">hand-picked by this guy:</span><span class="is-hidden">tap the 'Next' button to load more:</span> <span class="is-visible"><a href="https://twitter.com/__mookid__">Twitter</a> \ <a href="https://github.com/andres-guzman">Github</a> \ <a href="https://www.behance.net/andresguzmancanedo">Behance</a> <br> Click the "Next" button to load more:</span></p>
                     <button id="button">Next</button>
                 </section>
 
