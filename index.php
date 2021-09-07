@@ -30,11 +30,11 @@ $img = getRandomFromArray($imgList);
         <title>Simpshots</title>
         <meta name="description" content="Random screenshots from The Simpsons for fun fun x2.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="The Simpsons screenshots">
+        <meta property="og:title" content="The Simpsons Screenshots">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="Random screenshots form the Simpsons.">
+        <meta property="og:description" content="Random screenshots form the Simpsons. Try it for fun.">
         <meta property="og:url" content="http://www.simpshots.com/">
-        <meta property="og:image" content="http://www.simpshots.com/icon.png">
+        <meta property="og:image" content="http://www.simpshots.com/simpshots.jpg">
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="apple-touch-icon" href="icon.png">
         <meta name="theme-color" content="#fafafa">
