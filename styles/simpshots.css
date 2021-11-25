@@ -1,72 +1,129 @@
-﻿@font-face {
-	font-family: Alloy;
-	src: url(css/fonts/alloy_semibold-webfont.woff2) format('woff2'), url(css/fonts/alloy_semibold-webfont.woff) format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap
-}
+﻿/*
+	Andres Guzman
+	November, 2021
+
+*/
+
+
+/* ==========================================================================
+   fonts
+   ========================================================================== */
+
 
 @font-face {
-	font-family: PF;
-	src: url(css/fonts/PFArmaFive.woff2) format('woff2'), url(css/fonts/PFArmaFive.woff) format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap
+    font-family: 'Monument';
+    src: url('/fonts/monumentgrotesk-bold-webfont.woff2') format('woff2'),
+         url('/fonts/monumentgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
 }
 
- ::selection {
-	background: #fff;
-	color: #171819
-}
 
- ::-moz-selection {
-	background: #fff;
-	color: #171819
-}
+/* ==========================================================================
+   animations
+   ========================================================================== */
+
 
 @keyframes leftBottom {
 	0% {
-		transform: translate(0, 0)
+		transform: translate(0, 0);
 	}
 	100% {
-		transform: translate(8rem, 8rem)
+		transform: translate(8rem, 8rem);
 	}
 }
 
+
 @keyframes marqueeLeft {
 	from {
-		transform: translateX(0)
+		transform: translateX(0);
 	}
 	to {
-		transform: translateX(-100%)
+		transform: translateX(-100%);
 	}
+}
+
+
+
+/* ==========================================================================
+   base styles
+   ========================================================================== */
+
+
+::selection {
+	background: #fff;
+	color: #171819
+}
+
+
+::-moz-selection {
+	background: #fff;
+	color: #171819
+}
+
+
+:root {
+	font-size: 19px;
+	--marquee__font--size: 9px;
+	--marquee__speed: 160s;
+	--marquee__height: 30px;
+	--marquee__background: red;
 }
 
 
 html {
 	height: 100%;
-	font-size: calc(.75vw + 3.5px)
 }
 
+
 body {
-	--font-big: 4.5rem;
-	--marquee-font: 15px;
-	--marquee-speed: 160s;
-	--marquee-height: 35px;
-	background-color: #0b0b0e;
-	background-image: url(img/41.gif);
-	border-right: 11px solid #fff;
-	border-left: 11px solid #fff;
+	background-color: rgba(13, 13, 13, 1);
+	background-image: url(../images/noise.png);
 	margin: 0;
 	line-height: 1;
 	transition: all ease-in-out .75s;
 	height: 100%;
-	box-sizing: border-box
+	box-sizing: border-box;
 }
+
 
 .is-hidden {
 	display: none
 }
+
+
+
+/* ==========================================================================
+   marqees
+   ========================================================================== */
+
+
+
+
+
+
+/* ==========================================================================
+   main
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   shots panel
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   welcome panel
+   ========================================================================== */
+
+
 
 header {
 	width: 100vw;
@@ -123,69 +180,9 @@ section#welcome--panel {
 	align-self: center
 }
 
-main {
-	height: 100%;
-	display: flex;
-	flex-direction: column
-}
 
-#welcome--panel {
-	text-align: right;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	padding-bottom: 1.25rem
-}
 
-h1 {
-	color: #fff;
-	font: var(--font-big) Alloy, Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	line-height: 1;
-	letter-spacing: 2px;
-	transition: all ease-in-out .75s;
-	margin: 0 0 4vh 0
-}
 
-#welcome--panel h1,
-#welcome--panel p {
-	max-width: 710px
-}
-
-#welcome--panel p {
-	color: #fff;
-	font: 16px PF, Arial, Helvetica, sans-serif;
-	padding-left: 9rem;
-	box-sizing: border-box;
-	margin: 0 0 5.5vh 0
-}
-
-#welcome--panel p a {
-	color: #ff0048;
-	text-decoration: none;
-	transition: all 350ms ease 0s
-}
-
-#welcome--panel p a:hover {
-	color: #fff;
-	text-shadow: 1px 1px #ff0048, 2px 2px #ff0048, 3px 3px #ff0048, 4px 4px #ff0048
-}
-
-#shots--panel {
-	padding-right: 1rem
-}
-
-#shots-box {
-	display: flex;
-	width: 800px;
-	height: 580px;
-	overflow: hidden;
-	margin-bottom: 10px;
-	border: 5px solid #f1f1f1;
-	position: relative;
-	transition: all ease-in-out .75s;
-	z-index: 0
-}
 
 #shots-box::before {
 	opacity: 1;
@@ -196,7 +193,7 @@ h1 {
 	top: -10rem;
 	width: calc(100% + 10rem);
 	height: calc(100% + 10rem);
-	background-image: url(img/image.svg);
+	background-image: url(../images/homer.svg);
 	background-size: 8rem;
 	animation-name: leftBottom;
 	animation-duration: 8s;
@@ -208,39 +205,23 @@ h1 {
 	will-change: transform
 }
 
+
 .show {
 	opacity: 1
 }
+
 
 .fade--out {
 	opacity: 0;
 	transition: opacity .5s
 }
 
+
 #shots {
 	width: 100%;
 	position: relative;
 	z-index: 1;
 	align-self: center
-}
-
-#button {
-	font: 21px PF, Arial, Helvetica, san-serif;
-	cursor: pointer;
-	background: transparent;
-	color: #fff;
-	width: 160px;
-	height: 70px;
-	transition: box-shadow 350ms ease 0s;
-	padding-bottom: 4px;
-	border: 5px solid #fff;
-	border-radius: 35px;
-	outline: none;
-}
-
-#button:hover {
-	color: #fff;
-	box-shadow: 1px 1px #fff, 2px 2px #fff, 3px 3px #fff, 4px 4px #fff, 5px 5px #fff, 6px 6px #fff, 7px 7px #fff
 }
 
 
@@ -256,6 +237,7 @@ footer {
 	transition: all ease-in-out .75s
 }
 
+
 .marquee--inner__footer {
 	text-align: center;
 	white-space: nowrap;
@@ -264,6 +246,14 @@ footer {
 	animation-direction: reverse;
 	flex-shrink: 0
 }
+
+
+
+/* ==========================================================================
+   media queries
+   ========================================================================== */
+
+
 
 @media screen and (max-width:1310px),
 screen and (max-height:690px) {
