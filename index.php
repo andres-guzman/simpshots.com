@@ -104,7 +104,6 @@ $img = getRandomFromArray($imgList);
                         xhr.send();
                     });
                 }
-                evt.preventDefault();
             });
         </script>
 
