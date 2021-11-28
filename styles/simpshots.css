@@ -114,7 +114,7 @@
 		--fontSize__small: 1rem;
 		--fontFamily__main: "Tungsten", Georgia, serif;
 		--color__dark: rgba(204, 204, 204, 1);
-		--color__light: rgba(85, 40, 242, 1); /* rgba(204, 204, 204, 0.3) */
+		--color__light: rgba(255, 255, 255, 0.25); /* rgba(204, 204, 204, 0.3) */
 		--color__half: rgba(255, 255, 255, 0.25);
 	}
 
