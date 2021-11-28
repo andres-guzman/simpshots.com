@@ -146,6 +146,7 @@
 		line-height: 0.95;
 		text-transform: uppercase;
 		margin: 0 0 30px 0;
+		letter-spacing: 1px;
 	}
 
 
@@ -170,6 +171,7 @@
 		font: var(--fontSize__small) var(--fontFamily__main);
 		text-transform: uppercase;
 		box-sizing: border-box;
+		letter-spacing: 1px;
 	}
 
 
@@ -334,7 +336,6 @@
 
 	#content--welcome > p:last-of-type {
 		/* font-size: var(--fontSize__small); */
-		letter-spacing: unset;
 		margin-bottom: 0;
 	}
 
