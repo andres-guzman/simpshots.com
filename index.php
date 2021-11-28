@@ -99,7 +99,6 @@ $img = getRandomFromArray($imgList);
                                 console.log('Error');
                             }
                         };
-
                         xhr.open('GET', 'loader.php');
                         xhr.send();
                     });
