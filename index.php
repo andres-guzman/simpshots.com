@@ -71,7 +71,8 @@ $img = getRandomFromArray($imgList);
                     </svg>            
 
                     <p>Random/funny screenshots from <span>The Simpsons</span> from season 1 to season 20</p>
-                    <p>Click the image to load more</p>
+                    <p>Click the button to load more</p>
+                    <button id="button">Next</button>
                 </section>
             </article>            
 
@@ -86,7 +87,7 @@ $img = getRandomFromArray($imgList);
 
         <script>
             document.addEventListener("click", function (evt) {
-                if(evt.target.id === "shots") {
+                if(evt.target.id === "button") {
 
                     document.getElementById("shots").classList.add("fade--out");
                     
