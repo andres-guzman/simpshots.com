@@ -70,7 +70,7 @@ $img = getRandomFromArray($imgList);
                         <path d="M84.5,14.8v4.4c0,2.4-1.2,3.6-3.6,3.6h-1.3c-2.4,0-3.6-1.2-3.6-3.6v-5.4h2.9v5.3c0,0.7,0.4,1.1,1.1,1.1h0.4 c0.8,0,1.1-0.4,1.1-1.1v-3.9c0-0.9-0.3-1.3-0.9-1.8l-2.9-2.2c-1.3-1-1.7-2-1.7-3.6V3.6c0-2.4,1.2-3.6,3.6-3.6h1.2 c2.4,0,3.6,1.2,3.6,3.6v4.9h-2.9V3.7c0-0.8-0.4-1.1-1.1-1.1H80c-0.8,0-1.1,0.4-1.1,1.1v3.4c0,0.9,0.3,1.3,0.9,1.8l2.9,2.2 C84,12.2,84.5,13.1,84.5,14.8z"/>
                     </svg>            
 
-                    <p>Random/funny screenshots from <span>The Simpsons</span> from season 1 to season 20</p>
+                    <p>Random loader of funny screenshots from <span>The Simpsons</span> from season 1 to season 20</p>
                     <p>Click the button to load more</p>
                     <button id="button">Next</button>
                 </section>
