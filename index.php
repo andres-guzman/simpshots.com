@@ -43,7 +43,7 @@ $img = getRandomFromArray($imgList);
     <body>
 
         <main>
-            <header class="marquee" class="marquee--header">
+            <header class="marquee">
                 <div class="marquee--header__content">
                     <div class="marqueeFirst">Simpsons <span>+</span> Screenshots <span>=</span> Simpshots</div>
                     <div class="marqueeSecond">Simpsons <span>+</span> Screenshots <span>=</span> Simpshots</div>
@@ -76,7 +76,7 @@ $img = getRandomFromArray($imgList);
                 </section>
             </article>            
 
-            <footer class="marquee" class="marquee--footer">
+            <footer class="marquee">
                 <div class="marquee--footer__content">
                     <div class="marqueeFirst">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></div>                    
                     <div class="marqueeSecond">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></div>                    
