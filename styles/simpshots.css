@@ -305,16 +305,31 @@
 
 
 	#content--welcome > svg {
-		width: 100%;
-		fill: var(--color__dark);
+		width: 100%;		
 		margin-bottom: 30px;
-		animation: blackToWhite;
-		animation-duration: var(--invert__speed);
-		animation-iteration-count: 1;
-		animation-timing-function: linear;
 	}
 
+
 	#simpshots--logo__version {
+		fill: var(--color__light);
+	}
+
+
+	#simpshots--logo__char > path {
+		fill: var(--color__dark);
+		transition: fill 450ms ease-out 0s;
+	}
+
+
+	#simpshots--logo__char > path:nth-child(1):hover,
+	#simpshots--logo__char > path:nth-child(2):hover,
+	#simpshots--logo__char > path:nth-child(3):hover,
+	#simpshots--logo__char > path:nth-child(4):hover,
+	#simpshots--logo__char > path:nth-child(5):hover,
+	#simpshots--logo__char > path:nth-child(6):hover,
+	#simpshots--logo__char > path:nth-child(7):hover,
+	#simpshots--logo__char > path:nth-child(8):hover,
+	#simpshots--logo__char > path:nth-child(9):hover {
 		fill: var(--color__light);
 	}
 
