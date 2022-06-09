@@ -16,7 +16,7 @@ function getImagesFromDir($path) {
 }
 
 function getRandomFromArray($ar) {
-    mt_srand( (double)microtime() * 100000 ); //100000
+    // mt_srand((double)microtime()); // * 100000
     $num = array_rand($ar);
     return $ar[$num];
 }
@@ -38,7 +38,7 @@ $img = getRandomFromArray($imgList);
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="apple-touch-icon" href="icon.png">
         <meta name="theme-color" content="#e6e6e6">
-        <style>@font-face{font-family:Tungsten;src:url(/fonts/TungstenNarrow-Semibold.woff2) format('woff2'),url(/fonts/TungstenNarrow-Semibold.woff) format('woff');font-weight:600;font-style:normal;font-display:swap}@keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes leftBottom{0%{transform:translateX(0)}100%{transform:translateX(8rem)}}@keyframes marqueeFirst{0%{transform:translateY(0)}25%,5%,50%,75%{transform:translateY(0)}100%{transform:translateY(-100%)}}@keyframes marqueeSecond{0%{transform:translateY(0)}25%,5%,50%,75%{transform:translateY(0)}100%{transform:translateY(-100%)}}:root{font-size:23px;--invert__speed:2s;--marquee__speed:8s;--marquee__height:100px;--fontSize__huge:clamp(1rem, 10vw, 2rem);--fontSize__medium:clamp(1rem, 3vw, 3.45rem);--fontSize__small:1rem;--fontFamily__main:"Tungsten",Georgia,serif;--color__light:rgba(204, 204, 204, 1);--color__dark:rgba(204, 204, 204, 0.3)}::selection{background:var(--color__light);color:rgba(204,204,204,.3)}::-moz-selection{background:var(--color__light);color:rgba(204,204,204,.3)}html{height:100%}body{height:100%;background-color:rgba(13,13,13,1);background-image:url(/images/noise.png);margin:0;line-height:1;padding:0 5%;box-sizing:border-box}p{color:var(--color__dark);font:var(--fontSize__small) var(--fontFamily__main);line-height:.95;text-transform:uppercase;margin:0 0 30px 0}.fade--out{animation-name:fadeOut;animation-duration:.75s;animation-iteration-count:1;animation-timing-function:ease-out}.marquee{position:relative;height:var(--marquee__height);color:var(--color__light);font:var(--fontSize__small) var(--fontFamily__main);text-transform:uppercase;box-sizing:border-box;letter-spacing:1px}main{height:100%;display:grid;grid-template-areas:"header" "article" "footer";grid-template-columns:1fr;grid-template-rows:100px 1fr 100px}article{height:100%;display:grid;grid-template-columns:1fr 1fr;gap:5%;padding:50px 0;box-sizing:border-box;grid-area:article}header{display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--color__dark);grid-area:header}.marquee--footer__content,.marquee--header__content{overflow:hidden;height:26px}.marqueeFirst,.marqueeSecond{animation:marqueeFirst;animation-duration:var(--marquee__speed);animation-iteration-count:infinite;animation-timing-function:ease-out;padding-bottom:20px}.marqueeFirst a,.marqueeFirst span,.marqueeSecond a,.marqueeSecond span{color:var(--color__dark);padding:0 5px}footer{display:flex;align-items:center;justify-content:center;border-top:1px solid var(--color__dark);grid-area:footer}#shots--box{aspect-ratio:4/3;position:relative;box-sizing:border-box;border:4px solid var(--color__light);overflow:hidden}#shots{display:block;width:100%;position:relative;z-index:1}#shots--box::before{opacity:1;content:'';position:absolute;overflow:hidden;left:-10rem;top:-10rem;width:calc(100% + 10rem);height:calc(100% + 10rem);background-image:url(/images/homer.svg);background-size:8rem;animation-name:leftBottom;animation-duration:8s;animation-delay:0s;animation-iteration-count:infinite;animation-direction:normal;animation-timing-function:linear;animation-fill-mode:forwards;will-change:transform}#content--welcome>svg{width:100%;margin-bottom:30px}#simpshots--logo__version{fill:var(--color__light)}#simpshots--logo__char>path{fill:var(--color__dark);transition:fill 450ms ease-out 0s}#simpshots--logo__char>path:nth-child(1):hover,#simpshots--logo__char>path:nth-child(2):hover,#simpshots--logo__char>path:nth-child(3):hover,#simpshots--logo__char>path:nth-child(4):hover,#simpshots--logo__char>path:nth-child(5):hover,#simpshots--logo__char>path:nth-child(6):hover,#simpshots--logo__char>path:nth-child(7):hover,#simpshots--logo__char>path:nth-child(8):hover,#simpshots--logo__char>path:nth-child(9):hover{fill:var(--color__light)}#content--welcome>p:first-of-type{font-size:var(--fontSize__medium)}#content--welcome>p:first-of-type span{color:var(--color__light)}#content--welcome>p:last-of-type{margin-bottom:30px}#button{color:var(--color__light);font:var(--fontSize__small) var(--fontFamily__main);cursor:pointer;background:0 0;width:160px;height:70px;transition:box-shadow 350ms ease 0s;padding-bottom:4px;border:5px solid var(--color__light);border-radius:35px;outline:0;text-transform:uppercase}#button:hover{box-shadow:1px 1px var(--color__light),2px 2px var(--color__light),3px 3px var(--color__light),4px 4px var(--color__light),5px 5px var(--color__light),6px 6px var(--color__light),7px 7px var(--color__light)}@media screen and (max-width:680px){main{height:auto;display:flex;flex-direction:column;padding-top:12%}footer,header{display:none}article{display:flex;flex-direction:column-reverse;padding:0;text-align:center}#content--welcome>svg{margin-bottom:15px}#content--welcome>p:first-of-type{margin-bottom:0}}@media screen and (max-height:556px){.marquee{height:50px}}</style>
+        <style>@font-face{font-family:Tungsten;src:url(/fonts/TungstenNarrow-Semibold.woff2) format('woff2'),url(/fonts/TungstenNarrow-Semibold.woff) format('woff');font-weight:600;font-style:normal;font-display:swap}@keyframes fadeOut{from{opacity:1}to{opacity:0}}@keyframes leftBottom{0%{transform:translateX(0)}100%{transform:translateX(8rem)}}@keyframes marqueeFirst{0%{transform:translateY(0)}25%,5%,50%,75%{transform:translateY(0)}100%{transform:translateY(-100%)}}@keyframes marqueeSecond{0%{transform:translateY(0)}25%,5%,50%,75%{transform:translateY(0)}100%{transform:translateY(-100%)}}:root{font-size:23px;--invert__speed:2s;--marquee__speed:8s;--marquee__height:100px;--fontSize__huge:clamp(1rem, 10vw, 2rem);--fontSize__medium:clamp(1rem, 3vw, 3.45rem);--fontSize__small:1rem;--fontFamily__main:"Tungsten",Georgia,serif;--color__light:rgba(204, 204, 204, 1);--color__dark:rgba(204, 204, 204, 0.3)}::selection{background:var(--color__light);color:rgba(204,204,204,.3)}::-moz-selection{background:var(--color__light);color:rgba(204,204,204,.3)}html{height:100%}body{height:100%;background-color:rgba(13,13,13,1);background-image:url(/images/noise.png);margin:0;line-height:1;padding:0 5%;box-sizing:border-box}p{color:var(--color__dark);font:var(--fontSize__small) var(--fontFamily__main);line-height:.95;text-transform:uppercase;margin:0 0 30px 0}.fade--out{animation-name:fadeOut;animation-duration:.6s;animation-iteration-count:1;animation-timing-function:ease-in-out}.marquee{position:relative;height:var(--marquee__height);color:var(--color__light);font:var(--fontSize__small) var(--fontFamily__main);text-transform:uppercase;box-sizing:border-box;letter-spacing:1px}main{height:100%;display:grid;grid-template-areas:"header" "article" "footer";grid-template-columns:1fr;grid-template-rows:100px 1fr 100px}article{height:100%;display:grid;grid-template-columns:1fr 1fr;gap:5%;padding:50px 0;box-sizing:border-box;grid-area:article}header{display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--color__dark);grid-area:header}.marquee--footer__content,.marquee--header__content{overflow:hidden;height:26px}.marqueeFirst,.marqueeSecond{animation:marqueeFirst;animation-duration:var(--marquee__speed);animation-iteration-count:infinite;animation-timing-function:ease-out;padding-bottom:20px}.marqueeFirst a,.marqueeFirst span,.marqueeSecond a,.marqueeSecond span{color:var(--color__dark);padding:0 5px}footer{display:flex;align-items:center;justify-content:center;border-top:1px solid var(--color__dark);grid-area:footer}#shots--box{aspect-ratio:4/3;position:relative;box-sizing:border-box;border:4px solid var(--color__light);overflow:hidden}#shots{display:block;width:100%;position:relative;z-index:1}#shots--box::before{opacity:1;content:'';position:absolute;overflow:hidden;left:-10rem;top:-10rem;width:calc(100% + 10rem);height:calc(100% + 10rem);background-image:url(/images/homer.svg);background-size:8rem;animation-name:leftBottom;animation-duration:8s;animation-delay:0s;animation-iteration-count:infinite;animation-direction:normal;animation-timing-function:linear;animation-fill-mode:forwards;will-change:transform}#content--welcome>svg{width:100%;margin-bottom:30px}#simpshots--logo__version{fill:var(--color__light)}#simpshots--logo__char>path{fill:var(--color__dark);transition:fill 450ms ease-out 0s}#simpshots--logo__char>path:nth-child(1):hover,#simpshots--logo__char>path:nth-child(2):hover,#simpshots--logo__char>path:nth-child(3):hover,#simpshots--logo__char>path:nth-child(4):hover,#simpshots--logo__char>path:nth-child(5):hover,#simpshots--logo__char>path:nth-child(6):hover,#simpshots--logo__char>path:nth-child(7):hover,#simpshots--logo__char>path:nth-child(8):hover,#simpshots--logo__char>path:nth-child(9):hover{fill:var(--color__light)}#content--welcome>p:first-of-type{font-size:var(--fontSize__medium)}#content--welcome>p:first-of-type span{color:var(--color__light)}#content--welcome>p:last-of-type{margin-bottom:30px}#button{color:var(--color__light);font:var(--fontSize__small) var(--fontFamily__main);cursor:pointer;background:0 0;width:160px;height:70px;transition:box-shadow 350ms ease 0s;padding-bottom:4px;border:5px solid var(--color__light);border-radius:35px;outline:0;text-transform:uppercase}#button:hover{box-shadow:1px 1px var(--color__light),2px 2px var(--color__light),3px 3px var(--color__light),4px 4px var(--color__light),5px 5px var(--color__light),6px 6px var(--color__light),7px 7px var(--color__light)}@media screen and (max-width:680px){main{height:auto;display:flex;flex-direction:column;padding-top:12%}footer,header{display:none}article{display:flex;flex-direction:column-reverse;padding:0;text-align:center}#content--welcome>svg{margin-bottom:15px}#content--welcome>p:first-of-type{margin-bottom:0}}@media screen and (max-height:556px){.marquee{height:50px}}</style>
     </head>
     <body>
 
@@ -92,24 +92,25 @@ $img = getRandomFromArray($imgList);
         </main>    
 
         <script>
-            document.addEventListener("click", function (evt) {
-                if(evt.target.id === "button") {
+            button.addEventListener("click", function() {
+                let simpShots = document.getElementById("shots");
+                simpShots.classList.add("fade--out");
 
-                    document.getElementById("shots").classList.add("fade--out");
-                    
-                    requestAnimationFrame(function () {
-                        var xhr = new XMLHttpRequest ();
-                        xhr.onload = function () {
-                            if (xhr.status >= 200 && xhr.status < 300) {
-                                document.getElementById("shots--box").innerHTML = xhr.responseText;
-                            } else {
-                                console.log('Error');
-                            }
-                        };
-                        xhr.open('GET', 'loader.php');
-                        xhr.send();
-                    });
-                }
+                simpShots.addEventListener("animationend", () => {
+                    var xhr = new XMLHttpRequest();
+                    xhr.onload = function(){
+                        if (xhr.status >= 200 && xhr.status < 300) {
+                            document.getElementById("shots--box").innerHTML = xhr.responseText;
+                        } else {
+                            console.log("Error");
+                        }
+                    };
+
+                    xhr.open("GET", "loader.php");
+                    xhr.send();
+
+                    console.log("Ramdom shot loaded");
+                });
             });
         </script>
 
