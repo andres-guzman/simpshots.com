@@ -101,15 +101,13 @@ $img = getRandomFromArray($imgList);
                     xhr.onload = () => {
                         if (xhr.status >= 200 && xhr.status < 300) {
                             document.getElementById("shots--box").innerHTML = xhr.responseText;
+                            console.log("Ramdom shot loaded OK");
                         } else {
                             console.log("Error");
                         }
                     };
-
                     xhr.open("GET", "loader.php");
                     xhr.send();
-
-                    console.log("Ramdom shot loaded OK");
                 });
             });
         </script>
