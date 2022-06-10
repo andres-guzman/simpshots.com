@@ -91,7 +91,7 @@ $img = getRandomFromArray($imgList);
                 simpShots.classList.add("fade--out");
                 
                 simpShots.addEventListener("animationend", () =>  {
-                    var xhr = new XMLHttpRequest();
+                    let xhr = new XMLHttpRequest();
                     xhr.onload = () => {
                         if (xhr.status >= 200 && xhr.status < 300) {
                             document.getElementById("shots--box").innerHTML = xhr.responseText;
