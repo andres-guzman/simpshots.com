@@ -86,13 +86,13 @@ $img = getRandomFromArray($imgList);
         </main>    
 
         <script>
-            button.addEventListener("click", function(){
+            button.addEventListener("click", () => {
                 let simpShots = document.getElementById("shots");
                 simpShots.classList.add("fade--out");
                 
-                simpShots.addEventListener("animationend", function(){
+                simpShots.addEventListener("animationend", () =>  {
                     var xhr = new XMLHttpRequest();
-                    xhr.onload = function() {
+                    xhr.onload = () => {
                         if (xhr.status >= 200 && xhr.status < 300) {
                             document.getElementById("shots--box").innerHTML = xhr.responseText;
                             console.log("Ramdom shot loaded OK");
