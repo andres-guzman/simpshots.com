@@ -101,8 +101,8 @@
 		--fontSize__medium: clamp(1rem, 3vw, 3.45rem);
 		--fontSize__small: 1rem;
 		--fontFamily__main: "Tungsten", Georgia, serif;
-		--color__light: rgba(204, 204, 204, 1); /* rgba(204, 204, 204, 0.3) */
-		--color__dark: rgba(204, 204, 204, 0.3);
+		--color__light: rgba(255, 0, 84, 1); /* rgba(204, 204, 204, 0.3) */
+		--color__dark: rgba(43, 43, 43, 1);
 	}
 
 
@@ -125,8 +125,8 @@
 
 	body {
 		height: 100%;
-		background-color: rgba(13, 13, 13, 1);
-		background-image: url(/images/noise.png);
+		background-color: rgba(230, 230, 230, 1);
+		/* background-image: url(/images/noise.png); */
 		margin: 0;
 		line-height: 1;
 		/* animation: fadeIn;
@@ -166,7 +166,7 @@
 	.marquee {
 		position: relative;
 		height: var(--marquee__height);
-		color: var(--color__light);
+		color: var(--color__dark);
 		font: var(--fontSize__small) var(--fontFamily__main);
 		text-transform: uppercase;
 		box-sizing: border-box;
@@ -208,7 +208,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-bottom: 1px solid var(--color__dark);
+		border-bottom: 1px solid var(--color__light);
 		grid-area: header;
 	}
 
@@ -234,8 +234,9 @@
 	.marqueeSecond span,
 	.marqueeFirst a,
 	.marqueeSecond a {
-		color: var(--color__dark);
+		color: var(--color__light);
 		padding: 0 5px;
+		text-decoration: none;
 	}
 
 
@@ -249,7 +250,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-top: 1px solid var(--color__dark);
+		border-top: 1px solid var(--color__light);
 		grid-area: footer;
 	}
 
@@ -315,21 +316,21 @@
 	}
 
 
-	#simpshots--logo__char > path {
+	#simpshots--logo > path {
 		fill: var(--color__dark);
 		transition: fill 450ms ease-out 0s;
 	}
 
 
-	#simpshots--logo__char > path:nth-child(1):hover,
-	#simpshots--logo__char > path:nth-child(2):hover,
-	#simpshots--logo__char > path:nth-child(3):hover,
-	#simpshots--logo__char > path:nth-child(4):hover,
-	#simpshots--logo__char > path:nth-child(5):hover,
-	#simpshots--logo__char > path:nth-child(6):hover,
-	#simpshots--logo__char > path:nth-child(7):hover,
-	#simpshots--logo__char > path:nth-child(8):hover,
-	#simpshots--logo__char > path:nth-child(9):hover {
+	#simpshots--logo > path:nth-child(1):hover,
+	#simpshots--logo > path:nth-child(2):hover,
+	#simpshots--logo > path:nth-child(3):hover,
+	#simpshots--logo > path:nth-child(4):hover,
+	#simpshots--logo > path:nth-child(5):hover,
+	#simpshots--logo > path:nth-child(6):hover,
+	#simpshots--logo > path:nth-child(7):hover,
+	#simpshots--logo > path:nth-child(8):hover,
+	#simpshots--logo > path:nth-child(9):hover {
 		fill: var(--color__light);
 	}
 
@@ -352,7 +353,7 @@
 
 
 	#button {
-		color: var(--color__light);
+		color: var(--color__dark);
 		font: var(--fontSize__small) var(--fontFamily__main);
 		cursor: pointer;
 		background: transparent;
@@ -360,7 +361,7 @@
 		height: 70px;
 		transition: box-shadow 350ms ease 0s;
 		padding-bottom: 4px;
-		border: 5px solid var(--color__light);
+		border: 5px solid var(--color__dark);
 		border-radius: 35px;
 		outline: none;
 		text-transform: uppercase;
@@ -368,13 +369,13 @@
 
 	
 	#button:hover {
-		box-shadow: 1px 1px var(--color__light),
-					2px 2px var(--color__light),
-					3px 3px var(--color__light),
-					4px 4px var(--color__light),
-					5px 5px var(--color__light),
-					6px 6px var(--color__light),
-					7px 7px var(--color__light);
+		box-shadow: 1px 1px var(--color__dark),
+					2px 2px var(--color__dark),
+					3px 3px var(--color__dark),
+					4px 4px var(--color__dark),
+					5px 5px var(--color__dark),
+					6px 6px var(--color__dark),
+					7px 7px var(--color__dark);
 	}
 
 
