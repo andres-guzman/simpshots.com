@@ -67,9 +67,8 @@ $img = getRandomFromArray($imgList);
                         <path d="M53.4,9.9V0.2h3v22.4h-3v-10h-2.8v10h-3V0.2h3v9.7H53.4z"/>
                         <path d="M63,22.8h-1.6c-2.4,0-3.6-1.2-3.6-3.6V3.6C57.8,1.2,59,0,61.4,0H63c2.4,0,3.6,1.2,3.6,3.6v15.6C66.6,21.6,65.4,22.8,63,22.8 z M62.5,2.6h-0.6c-0.8,0-1.1,0.4-1.1,1.1v15.3c0,0.8,0.4,1.1,1.1,1.1h0.6c0.8,0,1.2-0.4,1.2-1.1V3.8C63.6,3,63.2,2.6,62.5,2.6z"/>
                         <path d="M69.8,22.6V2.9h-2.6V0.2h8.2v2.7h-2.6v19.7H69.8z"/>
-                        <path d="M84.5,14.8v4.4c0,2.4-1.2,3.6-3.6,3.6h-1.3c-2.4,0-3.6-1.2-3.6-3.6v-5.4h2.9v5.3c0,0.7,0.4,1.1,1.1,1.1h0.4 c0.8,0,1.1-0.4,1.1-1.1v-3.9c0-0.9-0.3-1.3-0.9-1.8l-2.9-2.2c-1.3-1-1.7-2-1.7-3.6V3.6c0-2.4,1.2-3.6,3.6-3.6h1.2 c2.4,0,3.6,1.2,3.6,3.6v4.9h-2.9V3.7c0-0.8-0.4-1.1-1.1-1.1H80c-0.8,0-1.1,0.4-1.1,1.1v3.4c0,0.9,0.3,1.3,0.9,1.8l2.9,2.2 C84,12.2,84.5,13.1,84.5,14.8z"/>
-                        
-                    </svg>                    
+                        <path d="M84.5,14.8v4.4c0,2.4-1.2,3.6-3.6,3.6h-1.3c-2.4,0-3.6-1.2-3.6-3.6v-5.4h2.9v5.3c0,0.7,0.4,1.1,1.1,1.1h0.4 c0.8,0,1.1-0.4,1.1-1.1v-3.9c0-0.9-0.3-1.3-0.9-1.8l-2.9-2.2c-1.3-1-1.7-2-1.7-3.6V3.6c0-2.4,1.2-3.6,3.6-3.6h1.2 c2.4,0,3.6,1.2,3.6,3.6v4.9h-2.9V3.7c0-0.8-0.4-1.1-1.1-1.1H80c-0.8,0-1.1,0.4-1.1,1.1v3.4c0,0.9,0.3,1.3,0.9,1.8l2.9,2.2 C84,12.2,84.5,13.1,84.5,14.8z"/>                        
+                    </svg>
 
                     <p>Random loader of funny screenshots from <span>The Simpsons</span> from season 1 to season 20</p>
                     <p>Click the button to load more</p>
@@ -90,7 +89,7 @@ $img = getRandomFromArray($imgList);
                 let simpShots = document.getElementById("shots");
                 simpShots.classList.add("fade--out");
                 
-                simpShots.addEventListener("animationend", () =>  {
+                simpShots.addEventListener("animationend", () => {
                     let xhr = new XMLHttpRequest();
                     xhr.onload = () => {
                         if (xhr.status >= 200 && xhr.status < 300) {
