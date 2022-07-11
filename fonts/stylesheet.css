@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'Tungsten Narrow';
-    src: url('fonts/TungstenNarrow-Semibold.woff2') format('woff2'),
-        url('fonts/TungstenNarrow-Semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
