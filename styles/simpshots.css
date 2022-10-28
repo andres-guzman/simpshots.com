@@ -118,7 +118,7 @@ html {
 
 body {
 	height: 100%;
-	background-color: rgba(11, 11, 14, 1);
+	background-color: rgb(26, 26, 32);
 	margin: 0;
 	line-height: 1;
 	border-left: 10px solid var(--color__light);
@@ -342,7 +342,7 @@ footer {
 	color: var(--color__light);
 	font: var(--fontSize__small) var(--fontFamily__small);
 	cursor: pointer;
-	background: var(--color__dark);
+	background: #1a1a20;
 	width: 160px;
 	height: 70px;
 	transition: box-shadow 350ms ease 0s;
