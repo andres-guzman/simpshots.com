@@ -75,16 +75,16 @@ $img = getRandomFromArray($imgList);
 
             <footer class="marquee">
                 <div class="marqueeDown">
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
-                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
+                    <span class="marqueeSeparator">Created by <a href="https://twitter.com/__mookid__" target="_blank" rel="noopener">mookid</a></span>
                 </div>
             </footer>
         </main>
