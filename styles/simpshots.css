@@ -89,7 +89,7 @@
 	--marquee__speedUp: 17s;
 	--marquee__speedDown: 10s;
 	--marquee__height: 54px;
-	--fontSize__huge: clamp(7vw, 3vw, 1rem);
+	--fontSize__huge: clamp(5vw, 3vw, 1rem);
 	--fontSize__small: 0.875rem;
 	--fontFamily__big: "Alloy", Arial, sans-serif;
 	--fontFamily__small: "PF", Arial, sans-serif;
