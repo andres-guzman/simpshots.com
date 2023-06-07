@@ -86,10 +86,10 @@
 
 :root {
 	font-size: 16px;
-	--marquee__speedUp: 17s;
-	--marquee__speedDown: 10s;
-	--marquee__height: 54px;
-	--fontSize__huge: clamp(5vw, 3vw, 1rem);
+	--marquee__speedUp: 24s;
+	--marquee__speedDown: 17s;
+	--marquee__height: 55px;
+	--fontSize__huge: clamp(4.5vw, 3vw, 1rem);
 	--fontSize__small: 0.875rem;
 	--fontFamily__big: "Alloy", Arial, sans-serif;
 	--fontFamily__small: "PF", Arial, sans-serif;
@@ -131,8 +131,8 @@ h1 {
 	color: var(--color__light);
 	font: var(--fontSize__huge) var(--fontFamily__big);
 	text-transform: uppercase;
-	margin: 0 0 2rem 0;
-	line-height: .825;
+	margin: 0 0 2.5rem 0;
+	line-height: .9;
 	letter-spacing: 3px;
 }
 
@@ -150,7 +150,8 @@ p {
 	font: var(--fontSize__small) var(--fontFamily__small);
 	line-height: 1.3;
 	text-transform: uppercase;
-	margin: 0 0 2rem 0;
+	margin: 0 0 2.5rem 0;
+	max-width: 55%;
 }
 
 
@@ -185,9 +186,9 @@ main {
 
 article {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1.45fr;
 	height: 100%;
-	gap: 34px;
+	gap: 50px;
 	box-sizing: border-box;
 	align-items: center;
 	padding: 0 7%;
@@ -285,7 +286,7 @@ footer {
 	/* experimental! */
 	position: relative;
 	box-sizing: border-box;
-	border: 7px solid var(--color__light);
+	border: 9px solid var(--color__light);
 	overflow: hidden;
 }
 
@@ -340,15 +341,15 @@ footer {
 
 #button {
 	color: var(--color__light);
-	font: 16px var(--fontFamily__small);
+	font: 18px var(--fontFamily__small);
 	cursor: pointer;
 	background: #1a1a20;
-	width: 160px;
-	height: 70px;
+	width: 170px;
+	height: 72px;
 	transition: box-shadow 350ms ease 0s;
 	padding-bottom: 4px;
-	border: 6px solid var(--color__light);
-	border-radius: 35px;
+	border: 7px solid var(--color__light);
+	border-radius: 36px;
 	outline: none;
 	text-transform: uppercase;
 }
@@ -362,7 +363,9 @@ footer {
 				-5px 5px var(--color__light),
 				-6px 6px var(--color__light),
 				-7px 7px var(--color__light),
-				-8px 8px var(--color__light);
+				-8px 8px var(--color__light),
+				-9px 9px var(--color__light),
+				-10px 10px var(--color__light);
 }
 
 
